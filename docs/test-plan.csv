@@ -1,0 +1,11 @@
+Requirement,How tested,Expected result,Actual result
+R1 Soil sensor,Turn potentiometer / vary sensor input,Raw reading changes,TO VERIFY
+R2 Moisture display,Observe Serial Monitor,Moisture percentage is displayed,TO VERIFY
+R3 Pump ON,Set moisture below 30%,Pump ON,TO VERIFY
+R4 Pump OFF,Raise moisture to 40% or above,Pump OFF,TO VERIFY
+R5 LED,Observe LED at both pump states,LED follows pump command,TO VERIFY
+R6 Sensor fault,Test ADC rail/invalid reading,FAULT shown; pump OFF,TO VERIFY
+R7 Sampling interval,Compare timestamps,One reading per second,TO VERIFY
+R8 Non-blocking loop,Inspect loop and observe periodic sampling,No delay() in integrated loop,TO VERIFY
+R9 Board,Inspect simulator/board configuration,NUCLEO-C031C6 selected,TO VERIFY
+R10 Pin reservations,Inspect wiring and pin definitions,PA2/PA3 and PA13/PA14 reserved,TO VERIFY
